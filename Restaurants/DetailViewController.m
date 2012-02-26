@@ -10,6 +10,8 @@
 @synthesize addressLabel;
 @synthesize navigationHeader;
 @synthesize cuisineLabel;
+@synthesize phoneLabel;
+@synthesize commentLabel;
 
 #pragma mark - View lifecycle
 
@@ -21,6 +23,8 @@
     addressLabel.text = [restaurant address];
     navigationHeader.title = [restaurant name];
     cuisineLabel.text = [restaurant cuisineType];
+    phoneLabel.text = [restaurant phone];
+    commentLabel.text = [restaurant comment];
 
 }
 
@@ -29,6 +33,8 @@
     [self setAddressLabel:nil];
     [self setNavigationHeader:nil];
     [self setCuisineLabel:nil];
+    [self setPhoneLabel:nil];
+    [self setCommentLabel:nil];
     [super viewDidUnload];
 }
 
